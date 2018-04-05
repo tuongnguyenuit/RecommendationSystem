@@ -1,0 +1,450 @@
+[
+    {
+        "Name": "Đắc Cà Phê - Duyên Hải",
+        "Rating": "4.4",
+        "Address": "46/2 Duyên Hải, tt. Cần Thạnh, Cần Giờ, TP. HCM, Việt Nam",
+        "Price": "Giá:10,000 vnđ - 100,000 vnđ",
+        "Review": "01 review",
+        "View": "32"
+    },
+    {
+        "Name": "Khu du lịch Rừng Sác Cần Giờ",
+        "Rating": "4",
+        "Address": "Đường Rừng Sác, An Thới Đông, Cần Giờ, Tp.HCM",
+        "Price": "Giá:10,000 vnđ - 100,000 vnđ",
+        "Review": "01 review",
+        "View": "150"
+    },
+    {
+        "Name": "Trà sữa thạch có nhân Supasa",
+        "Rating": "2.5",
+        "Address": "631 Rừng Sát, Bình Khánh, Cần Giờ, Hồ Chí Minh, Việt Nam",
+        "Price": "Giá:10,000 vnđ - 100,000 vnđ",
+        "Review": "00 review",
+        "View": "22"
+    },
+    {
+        "Name": "Ấp đảo Thiềng Liềng",
+        "Rating": "2.5",
+        "Address": "Xã đảo Thạnh An, Huyện Cần Giờ, TP.HCM",
+        "Price": "Giá:0 vnđ - 0 vnđ",
+        "Review": "00 review",
+        "View": "435"
+    },
+    {
+        "Name": "Đảo Ngọc Quán",
+        "Rating": "2.5",
+        "Address": "333 Rừng Sác, ấp Bình An, Xã Bình Khánh, Huyện Cần Giờ",
+        "Price": "Giá:10,000 vnđ - 100,000 vnđ",
+        "Review": "00 review",
+        "View": "128"
+    },
+    {
+        "Name": "Vựa Hải Sản Phương Trang",
+        "Rating": "4.7",
+        "Address": "482/2 Hưng Thạnh, TT. Cần Thạnh, Cần Giờ, TP.HCM, Việt Nam",
+        "Price": "Giá:10,000 vnđ - 100,000 vnđ",
+        "Review": "01 review",
+        "View": "206"
+    },
+    {
+        "Name": "Biển 30 Tháng 4 - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Phan Đức, X. Long Hòa, Cần Giờ, TP. HCM",
+        "Price": "Giá:10,000 vnđ - 100,000 vnđ",
+        "Review": "00 review",
+        "View": "1.5k"
+    },
+    {
+        "Name": "Quán Chị Út - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Khu du lịch 30/4, Cần Giờ, Thành phố Hồ Chí Minh",
+        "Price": "Giá:10,000 vnđ - 100,000 vnđ",
+        "Review": "00 review",
+        "View": "1.2k"
+    },
+    {
+        "Name": "Quán ăn hải sản Gió Lộng",
+        "Rating": "2.5",
+        "Address": "Tắc Xuất, Cần Giờ, TP. HCM",
+        "Price": "Giá:10,000 vnđ - 200,000 vnđ",
+        "Review": "00 review",
+        "View": "831"
+    },
+    {
+        "Name": "Biển Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Phía đông nam của Thành phố Hồ Chí Minh, Cách Sài Gòn 40km",
+        "Price": "Giá:0 vnđ - 0 vnđ",
+        "Review": "00 review",
+        "View": "414"
+    },
+    {
+        "Name": "Đảo Thạnh An",
+        "Rating": "5",
+        "Address": "Đảo Thạnh An, Cần Giờ, Tp. Hồ Chí Minh",
+        "Price": "Giá:0 vnđ - 0 vnđ",
+        "Review": "02 review",
+        "View": "3.1k"
+    },
+    {
+        "Name": "Mũ chôm, hạt é - Duyên Hải",
+        "Rating": "3.5",
+        "Address": "64/2a Duyên Hải, Long Hòa, Cần Giờ, Hồ Chí Minh, Việt Nam",
+        "Price": "Giá:5,000 vnđ - 5,000 vnđ",
+        "Review": "01 review",
+        "View": "71"
+    },
+    {
+        "Name": "Bánh Căn Cần Giờ",
+        "Rating": "3.5",
+        "Address": "49 Duyên Hải, Long Hòa, Cần Giờ, Hồ Chí Minh, Việt Nam",
+        "Price": "Giá:0 vnđ - 0 vnđ",
+        "Review": "01 review",
+        "View": "295"
+    },
+    {
+        "Name": "Vựa Hải Sản Hưng Son - Cần Giờ",
+        "Rating": "4.7",
+        "Address": "Quầy 6B, KDL 30/4, Chợ Hàng Dương, H. Cần Giờ, TP.HCM.",
+        "Price": "Giá:15,000 vnđ - 200,000 vnđ",
+        "Review": "01 review",
+        "View": "6.4k"
+    },
+    {
+        "Name": "Nhà Hàng Duyên Hải - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "551/2  Khu phố Miễu Ba, TT Cần Thạnh, Cần Giờ",
+        "Price": "Giá:30,000 vnđ - 400,000 vnđ",
+        "Review": "01 review",
+        "View": "128"
+    },
+    {
+        "Name": "Quán Ốc Xích Lại - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Xã Bình Khánh, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "101"
+    },
+    {
+        "Name": "Quán Ăn Phương Thi - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "P. Long Thạnh, Đường Bãi Biển 30 Tháng 4, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "55"
+    },
+    {
+        "Name": "Quán Ăn Gia Đình Tứ Phát - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "333 Thạnh Thới, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "24"
+    },
+    {
+        "Name": "Uyên Ngọc Cafe - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Rừng Sác, P. Bình Khánh, Cần Giờ",
+        "Price": "Giá:20,000 vnđ - 33,000 vnđ",
+        "Review": "01 review",
+        "View": "14"
+    },
+    {
+        "Name": "Hòn Ngọc Phương Nam - Khu Du Lịch Sinh Thái Biển",
+        "Rating": "3.7",
+        "Address": "Âp Đồng Hòa, Long Hòa, Cần Giờ",
+        "Price": "Giá:1,000,000 vnđ - 2,200,000 vnđ",
+        "Review": "01 review",
+        "View": "10.1k"
+    },
+    {
+        "Name": "Gió Rừng - Cần Giờ",
+        "Rating": "4",
+        "Address": "Thạnh Thới, Long Hòa, Cần Giờ",
+        "Price": "Giá:60,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "147"
+    },
+    {
+        "Name": "Làng Nướng 54 - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Thạnh Thới, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:150,000 vnđ - 330,000 vnđ",
+        "Review": "01 review",
+        "View": "39"
+    },
+    {
+        "Name": "Quán Ăn Hồng Linh - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Rừng Sác, X. An Thới Đông, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 220,000 vnđ",
+        "Review": "01 review",
+        "View": "24"
+    },
+    {
+        "Name": "Quán Nhậu Ngàn Ly - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Tắc Suất, TT. Cần Thạnh, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "33"
+    },
+    {
+        "Name": "Quán 100% Thiên Nhiên",
+        "Rating": "4.3",
+        "Address": "10/82 Phan Đức , Ấp Long Thạnh, X. Long Hoà, Cần Giờ",
+        "Price": "Giá:15,000 vnđ - 200,000 vnđ",
+        "Review": "01 review",
+        "View": "370"
+    },
+    {
+        "Name": "Ba Nhẫn Cafe - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Rừng Sác, P. Bình Khánh, Cần Giờ",
+        "Price": "Giá:20,000 vnđ - 33,000 vnđ",
+        "Review": "01 review",
+        "View": "07"
+    },
+    {
+        "Name": "Quán Ăn Thi - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Ấp Miễu Nhì, Duyên Hải, TT. Cần Thạnh, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "06"
+    },
+    {
+        "Name": "Quán Ăn Cát Biển - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Duyên Hải, TT. Cần Thạnh, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "119"
+    },
+    {
+        "Name": "Duyên Hải - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "25 Tắc Suất, TT. Cần Thạnh, Cần Giờ",
+        "Price": "Giá:150,000 vnđ - 330,000 vnđ",
+        "Review": "01 review",
+        "View": "30"
+    },
+    {
+        "Name": "Quán Ăn Phố Biển",
+        "Rating": "2.5",
+        "Address": "289 Tắc Suất, Khu Phố Miễu Nhì, TT. Cần Thạnh, Cần Giờ",
+        "Price": "Giá:150,000 vnđ - 330,000 vnđ",
+        "Review": "01 review",
+        "View": "64"
+    },
+    {
+        "Name": "Quán Ăn Tùng - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Duyên Hải, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "19"
+    },
+    {
+        "Name": "Sân Vườn Cafe - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "261/3 Miễu Nhì Tắc Suất, Cần Giờ",
+        "Price": "Giá:20,000 vnđ - 33,000 vnđ",
+        "Review": "01 review",
+        "View": "10"
+    },
+    {
+        "Name": "Cần Giờ Resort",
+        "Rating": "3",
+        "Address": "Đường Thạnh Thới, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:150,000 vnđ - 330,000 vnđ",
+        "Review": "01 review",
+        "View": "94"
+    },
+    {
+        "Name": "Quán Ăn Điểm Hẹn Thanh Bình - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Rừng Sác, X. Lý Nhơn, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "08"
+    },
+    {
+        "Name": "Quán Ăn 363 - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Ấp Bình Thuận, Rừng Sác, X. Bình Khánh, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "17"
+    },
+    {
+        "Name": "Quán Ăn Bình Dân Phương Thủy - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Tắc Suất, TT. Cần Thạnh, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "22"
+    },
+    {
+        "Name": "Ngọc Diệp Cafe - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Rừng Sác, P. Bình Khánh, Cần Giờ",
+        "Price": "Giá:20,000 vnđ - 33,000 vnđ",
+        "Review": "01 review",
+        "View": "05"
+    },
+    {
+        "Name": "Nhã Vy Cafe - Cafe Sân Vườn",
+        "Rating": "2.5",
+        "Address": "Ấp Bình Thuận, Rừng Sác, X. Bình Khánh, Cần Giờ",
+        "Price": "Giá:25,000 vnđ - 44,000 vnđ",
+        "Review": "01 review",
+        "View": "16"
+    },
+    {
+        "Name": "Xanh Xanh Cafe - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "290 Duyên Hải, Cần Giờ",
+        "Price": "Giá:20,000 vnđ - 33,000 vnđ",
+        "Review": "01 review",
+        "View": "24"
+    },
+    {
+        "Name": "Nhạn Trắng",
+        "Rating": "2.8",
+        "Address": "139 Duyên Hải, TT. Cần Thạnh, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 330,000 vnđ",
+        "Review": "01 review",
+        "View": "615"
+    },
+    {
+        "Name": "Carrot - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Khu Bãi Biển 30 Tháng 4, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 275,000 vnđ",
+        "Review": "01 review",
+        "View": "121"
+    },
+    {
+        "Name": "Cát Xanh - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "551 Ấp Bình An, Đường Rừng Sát, X. Bình Khánh, Cần Giờ",
+        "Price": "Giá:150,000 vnđ - 330,000 vnđ",
+        "Review": "01 review",
+        "View": "36"
+    },
+    {
+        "Name": "Quán Hủ Tiếu Bò Viên Nguyên Chất Miền Tây Lan Anh",
+        "Rating": "2.5",
+        "Address": "Ấp Bình Phước, Rừng Sác, P. Bình Khánh, Cần Giờ",
+        "Price": "Giá:30,000 vnđ - 55,000 vnđ",
+        "Review": "01 review",
+        "View": "28"
+    },
+    {
+        "Name": "Hải Sản - Chợ Hàng Dương",
+        "Rating": "3.5",
+        "Address": "Ấp Long Thạnh, Thạnh Thới, Long Hòa, Cần Giờ",
+        "Price": "Giá:50,000 vnđ - 200,000 vnđ",
+        "Review": "02 review",
+        "View": "12.9k"
+    },
+    {
+        "Name": "Kỳ Nam Quán - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Phan Đức, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "84"
+    },
+    {
+        "Name": "Hải Sản - Chợ Cần Giờ",
+        "Rating": "5",
+        "Address": "Duyên Hải, Thị Trấn Cần Thạnh, Cần Giờ",
+        "Price": "Giá:50,000 vnđ - 200,000 vnđ",
+        "Review": "01 review",
+        "View": "6.5k"
+    },
+    {
+        "Name": "Gió Lộng Cafe - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Duyên Hải, Cần Giờ",
+        "Price": "Giá:20,000 vnđ - 33,000 vnđ",
+        "Review": "01 review",
+        "View": "194"
+    },
+    {
+        "Name": "Hương Tân Cafe - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "114/3 Duyên Hải, Cần Giờ",
+        "Price": "Giá:20,000 vnđ - 33,000 vnđ",
+        "Review": "01 review",
+        "View": "03"
+    },
+    {
+        "Name": "Sáng Trăng Cafe",
+        "Rating": "2.5",
+        "Address": "Cần Thạnh, Cần Giờ",
+        "Price": "Giá:15,000 vnđ - 50,000 vnđ",
+        "Review": "01 review",
+        "View": "07"
+    },
+    {
+        "Name": "Quán Ăn Thảo My - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Thạnh Thới, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "09"
+    },
+    {
+        "Name": "Tâm Ngọc Resort - Cần Giờ",
+        "Rating": "3.8",
+        "Address": "Ấp Đồng Hòa, Xã Long Hòa, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 330,000 vnđ",
+        "Review": "01 review",
+        "View": "200"
+    },
+    {
+        "Name": "Khu Du Lịch Sinh Thái Vàm Sát",
+        "Rating": "4.2",
+        "Address": "Xã Lý Nhơn, Cần Giờ",
+        "Price": "Giá:0 vnđ - 0 vnđ",
+        "Review": "09 review",
+        "View": "671"
+    },
+    {
+        "Name": "Hoa Sóng Cafe - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Cần Thạnh, Cần Giờ",
+        "Price": "Giá:20,000 vnđ - 33,000 vnđ",
+        "Review": "01 review",
+        "View": "21"
+    },
+    {
+        "Name": "Quán Ăn Thanh Lịch - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Duyên Hải, TT. Cần Thạnh, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "10k"
+    },
+    {
+        "Name": "Quán Ăn Thu Oanh - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "Duyên Hải, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:100,000 vnđ - 165,000 vnđ",
+        "Review": "01 review",
+        "View": "16"
+    },
+    {
+        "Name": "Cayyoi - Cần Giờ",
+        "Rating": "2.5",
+        "Address": "24 Thạnh Thới, X. Long Hòa, Cần Giờ",
+        "Price": "Giá:150,000 vnđ - 330,000 vnđ",
+        "Review": "01 review",
+        "View": "26"
+    }
+]
