@@ -9,13 +9,15 @@ import scrapy
 
 
 class CrawlerdataItem(scrapy.Item):
-    name = scrapy.Field()
+    category = scrapy.Field()
+    name = scrapy.Field()    
     rating = scrapy.Field()
     reviews_number = scrapy.Field()
     rank = scrapy.Field()
-    street_address = scrapy.Field()
+    address = scrapy.Field()
+    open_time = scrapy.Field()
     avatar = scrapy.Field()
-    engine = scrapy.Field()
+    attraction = scrapy.Field()
     # location = scrapy.Field()
     # user = scrapy.Field()
 
