@@ -35,8 +35,8 @@ class TripadvisorSpider(Spider):
         item['rank'] = response.css('span.header_popularity.popIndexValidation b span::text').extract_first().replace("Số ", "")
         item['rating'] = response.css('div.rs.rating span::attr(content)').extract_first()
         item['reviews_number'] = response.css('div.rs.rating a.more span::text').extract_first()
-        item['address'] = response.css('span.street-address::text').extract_first() + response.css('span.locality::text').extract_first()
-        
+        # item['address'] = response.css('span.street-address::text').extract_first() + ", " + response.css('span.locality::text').extract_first().replace(", ", "")
+        # item['open_time'] = response.css('div.ui_column.is-12 span[1]::text')
         yield item
 
         # category = scrapy.Field()
