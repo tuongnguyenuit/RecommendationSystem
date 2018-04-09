@@ -14,6 +14,9 @@ class CrawlerdataItem(scrapy.Item):
     reviews_number = scrapy.Field()
     rank = scrapy.Field()
     street_address = scrapy.Field()
-    location = scrapy.Field()
+    avatar = scrapy.Field()
+    engine = scrapy.Field()
+    # location = scrapy.Field()
+    # user = scrapy.Field()
 
     

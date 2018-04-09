@@ -14,7 +14,7 @@ BOT_NAME = 'crawlerdata'
 SPIDER_MODULES = ['crawlerdata.spiders']
 NEWSPIDER_MODULE = 'crawlerdata.spiders'
 FEED_EXPORT_ENCODING = "utf-8"
-DOWNLOAD_DELAY = 0.5
+# DOWNLOAD_DELAY = 0.5
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'crawlerdata (+http://www.yourdomain.com)'
