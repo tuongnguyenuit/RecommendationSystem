@@ -8,8 +8,24 @@ class TripadvisorSpider(Spider):
     allowed_domains = ["tripadvisor.com.vn"]
     def start_requests(self):
         list_url = [
-            "https://www.tripadvisor.com.vn/Attractions-g293925-Activities-c47-Ho_Chi_Minh_City.html",
-
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c42-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c47-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c61-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c55-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c36-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c49-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c57-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c58-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c40-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c59-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c26-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c41-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c20-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c56-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c60-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c52-Hanoi.html",
+            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c48-Hanoi.html",
+            "https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c62-Hanoi.html",
         ]
         for url in list_url:
             yield scrapy.Request(url, callback=self.parse)
@@ -32,7 +48,7 @@ class TripadvisorSpider(Spider):
         try:
             # Case 1: Have 3 attraction and long address
             item = CrawlerdataItem()
-            item['category'] = "Danh lam & Thắng cảnh"
+            item['category'] = "Sự kiện"
             item['name'] = response.css('h1.heading_title::text').extract_first()        
             item['rating'] = response.css('div.rs.rating span::attr(content)').extract_first()
             item['reviews_number'] = response.css('div.rs.rating a.more span::text').extract_first()
@@ -56,12 +72,26 @@ class TripadvisorSpider(Spider):
                     item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[2]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[3]/text()').extract_first()
                     yield item
                 except:
-                    # Case 4: Have 2 attraction and short address         
-                    item['address'] = response.css('span.locality::text').extract_first().replace(", ", "")
-                    item['avatar'] = response.xpath('//*[@id="taplc_location_detail_above_the_fold_attractions_0"]/div/div[3]/div[1]/div/div/div[1]/div/div/div/div[1]/div[last()]/span/img/@src').extract_first()
-                    item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[2]/text()').extract_first()
-                    yield item
-                    
+                    try:
+                        # Case 4: Have 2 attraction and short address         
+                        item['address'] = response.css('span.locality::text').extract_first().replace(", ", "")
+                        item['avatar'] = response.xpath('//*[@id="taplc_location_detail_above_the_fold_attractions_0"]/div/div[3]/div[1]/div/div/div[1]/div/div/div/div[1]/div[last()]/span/img/@src').extract_first()
+                        item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[2]/text()').extract_first()
+                        yield item
+                    except:
+                        try:
+                            # Case 5: Have 1 attraction and long address
+                            item['address'] = response.css('span.street-address::text').extract_first() + ", " + response.css('span.locality::text').extract_first().replace(", ", "")
+                            item['avatar'] = response.xpath('//*[@id="taplc_location_detail_above_the_fold_attractions_0"]/div/div[3]/div[1]/div/div/div[1]/div/div/div/div[1]/div[last()]/span/img/@src').extract_first()
+                            item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first()
+                            yield item
+                        except:
+                            # Case 6: Have 1 attraction and short address
+                            item['address'] = response.css('span.locality::text').extract_first().replace(", ", "")
+                            item['avatar'] = response.xpath('//*[@id="taplc_location_detail_above_the_fold_attractions_0"]/div/div[3]/div[1]/div/div/div[1]/div/div/div/div[1]/div[last()]/span/img/@src').extract_first()
+                            item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first()
+                            yield item
+
 
 
         # category = scrapy.Field()
