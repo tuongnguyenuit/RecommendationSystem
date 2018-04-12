@@ -29,15 +29,40 @@ class TripadvisorSpider(Spider):
 
 
     def parse_item(self, response):
-        item = CrawlerdataItem()
-        item['category'] = "Danh lam & Thắng cảnh"
-        item['name'] = response.css('h1.heading_title::text').extract_first()        
-        item['rank'] = response.css('span.header_popularity.popIndexValidation b span::text').extract_first().replace("Số ", "")
-        item['rating'] = response.css('div.rs.rating span::attr(content)').extract_first()
-        item['reviews_number'] = response.css('div.rs.rating a.more span::text').extract_first()
-        # item['address'] = response.css('span.street-address::text').extract_first() + ", " + response.css('span.locality::text').extract_first().replace(", ", "")
-        # item['open_time'] = response.css('div.ui_column.is-12 span[1]::text')
-        yield item
+        try:
+            # Case 1: Have 3 attraction and long address
+            item = CrawlerdataItem()
+            item['category'] = "Danh lam & Thắng cảnh"
+            item['name'] = response.css('h1.heading_title::text').extract_first()        
+            item['rating'] = response.css('div.rs.rating span::attr(content)').extract_first()
+            item['reviews_number'] = response.css('div.rs.rating a.more span::text').extract_first()
+            item['rank'] = response.css('span.header_popularity.popIndexValidation b span::text').extract_first().replace("Số ", "")
+            item['address'] = response.css('span.street-address::text').extract_first() + ", " + response.css('span.locality::text').extract_first().replace(", ", "")
+            item['avatar'] = response.xpath('//*[@id="taplc_location_detail_above_the_fold_attractions_0"]/div/div[3]/div[1]/div/div/div[1]/div/div/div/div[1]/div[last()]/span/img/@src').extract_first()
+            item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[2]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[3]/text()').extract_first()
+            yield item            
+        except:
+            try:       
+                # Case 2: Have 2 attraction and long address           
+                item['address'] = response.css('span.street-address::text').extract_first() + ", " + response.css('span.locality::text').extract_first().replace(", ", "")
+                item['avatar'] = response.xpath('//*[@id="taplc_location_detail_above_the_fold_attractions_0"]/div/div[3]/div[1]/div/div/div[1]/div/div/div/div[1]/div[last()]/span/img/@src').extract_first()
+                item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[2]/text()').extract_first()
+                yield item
+            except:
+                try:
+                    # Case 3: Have 3 attraction and short address
+                    item['address'] = response.css('span.locality::text').extract_first().replace(", ", "")
+                    item['avatar'] = response.xpath('//*[@id="taplc_location_detail_above_the_fold_attractions_0"]/div/div[3]/div[1]/div/div/div[1]/div/div/div/div[1]/div[last()]/span/img/@src').extract_first()
+                    item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[2]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[3]/text()').extract_first()
+                    yield item
+                except:
+                    # Case 4: Have 2 attraction and short address         
+                    item['address'] = response.css('span.locality::text').extract_first().replace(", ", "")
+                    item['avatar'] = response.xpath('//*[@id="taplc_location_detail_above_the_fold_attractions_0"]/div/div[3]/div[1]/div/div/div[1]/div/div/div/div[1]/div[last()]/span/img/@src').extract_first()
+                    item['attraction'] = response.xpath('//span[@class="header_detail attraction_details"]/div/a[1]/text()').extract_first() + ", " + response.xpath('//span[@class="header_detail attraction_details"]/div/a[2]/text()').extract_first()
+                    yield item
+                    
+
 
         # category = scrapy.Field()
         # name = scrapy.Field()    
@@ -45,7 +70,6 @@ class TripadvisorSpider(Spider):
         # reviews_number = scrapy.Field()
         # rank = scrapy.Field()
         # address = scrapy.Field()
-        # open_time = scrapy.Field()
         # avatar = scrapy.Field()
         # attraction = scrapy.Field()
 
