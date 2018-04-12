@@ -8,24 +8,7 @@ class TripadvisorSpider(Spider):
     allowed_domains = ["tripadvisor.com.vn"]
     def start_requests(self):
         list_url = [
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c42-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c47-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c61-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c55-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c36-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c49-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c57-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c58-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c40-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c59-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c26-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c41-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c20-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c56-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c60-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c52-Hanoi.html",
-            #"https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c48-Hanoi.html",
-            "https://www.tripadvisor.com.vn/Attractions-g293924-Activities-c62-Hanoi.html",
+            "https://www.tripadvisor.com.vn/Attractions-g2145104-Activities-c59-Ba_Ria_Vung_Tau_Province.html"
         ]
         for url in list_url:
             yield scrapy.Request(url, callback=self.parse)
@@ -48,7 +31,7 @@ class TripadvisorSpider(Spider):
         try:
             # Case 1: Have 3 attraction and long address
             item = CrawlerdataItem()
-            item['category'] = "Sự kiện"
+            item['category'] = "Phương tiện giao thông"
             item['name'] = response.css('h1.heading_title::text').extract_first()        
             item['rating'] = response.css('div.rs.rating span::attr(content)').extract_first()
             item['reviews_number'] = response.css('div.rs.rating a.more span::text').extract_first()
