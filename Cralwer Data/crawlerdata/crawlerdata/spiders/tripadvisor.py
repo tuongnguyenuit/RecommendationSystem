@@ -8,7 +8,7 @@ class TripadvisorSpider(Spider):
     allowed_domains = ["tripadvisor.com.vn"]
     def start_requests(self):
         list_url = [
-            "https://www.tripadvisor.com.vn/Attractions-g2145104-Activities-c59-Ba_Ria_Vung_Tau_Province.html"
+            "https://www.tripadvisor.com.vn/Attractions-g3311193-Activities-c49-Binh_Duong_Province.html"
         ]
         for url in list_url:
             yield scrapy.Request(url, callback=self.parse)
@@ -31,7 +31,7 @@ class TripadvisorSpider(Spider):
         try:
             # Case 1: Have 3 attraction and long address
             item = CrawlerdataItem()
-            item['category'] = "Phương tiện giao thông"
+            item['category'] = "Bảo tàng"
             item['name'] = response.css('h1.heading_title::text').extract_first()        
             item['rating'] = response.css('div.rs.rating span::attr(content)').extract_first()
             item['reviews_number'] = response.css('div.rs.rating a.more span::text').extract_first()
