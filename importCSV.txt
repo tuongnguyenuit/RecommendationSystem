@@ -1,0 +1,11 @@
+LOAD CSV WITH HEADERS FROM "file:///C:/test.csv" AS line
+MERGE (ci:City {title: "Ho Chi Minh"})
+MERGE (ca:Category {title: line.category})
+MERGE (lo:Place {title: line.name})
+ON CREATE SET lo.rating = line.rating
+ON CREATE SET lo.reviews_number = line.reviews_number
+ON CREATE SET lo.rank = line.rank
+ON CREATE SET lo.address = line.address
+ON CREATE SET lo.attraction = line.attraction
+MERGE (ci)-[:HAVE]->(ca)
+MERGE (ca)-[:LOCATED_IN]->(lo)

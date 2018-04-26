@@ -9,6 +9,7 @@ import scrapy
 
 
 class CrawlerdataItem(scrapy.Item):
+    city = scrapy.Field()
     category = scrapy.Field()
     name = scrapy.Field()    
     rating = scrapy.Field()
