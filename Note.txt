@@ -1,4 +1,12 @@
-DB Browser for SQLite tool
-sqlchemy
+* INSTALL TOOL:
 
-Neo4j
+	+ DB Browser for SQLite tool
+	+ sqlchemy
+
+	+ Neo4j
+
+* CREATE VIDEOS INSTRUCT 
+	+ How to install Neo4j in graph DB
+	+ How to install sqlchemy and Sqlite tool to save data
+	+ How to crawl data from web to sqlite
+	+ How to use Neo4j and import data from CSV into Neo4j
