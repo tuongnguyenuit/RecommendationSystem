@@ -6,19 +6,22 @@ from crawlerdata.items import CrawlerdataItem
 class TripadvisorSpider(Spider):
     name = 'tripadvisor'
     allowed_domains = ["tripadvisor.com.vn"]
+
     def start_requests(self):
         list_url = [
-            "https://www.tripadvisor.com.vn/Attractions-g298085-Activities-c57-Da_Nang_Quang_Nam_Province.html"
+            "https://www.tripadvisor.com.vn/Attractions-g298085-Activities-c55-Da_Nang_Quang_Nam_Province.html"
         ]
         for url in list_url:
             yield scrapy.Request(url, callback=self.parse)
 
     # Initialize variable to get value of category
     nameCategory=""
+    nameCity=""
 
-    def parse(self, response):
+    def parse(self, response):       
         # Get name of category
-        self.nameCategory = response.css('div.filter_list_0 div label a.taLnk::text').extract_first()
+        self.nameCategory = response.css('label.label.filterName a.taLnk::text').extract_first()
+        self.nameCity = response.css('span.ui_pill.inverted::text').extract_first()
 
         # Get url of next page
         for nextpage in response.css('#FILTERED_LIST > div.al_border.deckTools.btm > div > div > a.nav.next.rndBtn.ui_button.primary.taLnk::attr(href)').extract():
@@ -36,7 +39,7 @@ class TripadvisorSpider(Spider):
         try:
             # Case 1: Have 3 attraction and long address
             item = CrawlerdataItem()
-            item['city'] = response.css('div.global-nav-geopill span.ui_pill.inverted::text').extract_first()
+            item['city'] = self.nameCity
             item['category'] = self.nameCategory
             item['name'] = response.css('h1.heading_title::text').extract_first()        
             item['rating'] = response.css('div.rs.rating span::attr(content)').extract_first()

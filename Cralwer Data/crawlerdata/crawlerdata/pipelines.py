@@ -15,7 +15,7 @@ from scrapy.exceptions import DropItem
 class CrawlerdataPipeline(object):
 
     def __init__(self):
-        _engine = create_engine("sqlite:///datademo2.db")
+        _engine = create_engine("sqlite:///Test.db")
         _connection = _engine.connect()
         _metadata = MetaData()
         _stack_items = Table("Test", _metadata,
